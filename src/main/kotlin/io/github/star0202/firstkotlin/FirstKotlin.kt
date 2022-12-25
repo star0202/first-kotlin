@@ -4,11 +4,9 @@ import net.fabricmc.api.ModInitializer
 import org.slf4j.LoggerFactory
 
 
-@Suppress("UNUSED")
 object FirstKotlin : ModInitializer {
-    private const val MOD_ID = "firstkotlin"
-    private val LOGGER = LoggerFactory.getLogger(MOD_ID)
+    private val LOGGER = LoggerFactory.getLogger(Constants.MOD_NAME)
     override fun onInitialize() {
-        LOGGER.info("Example mod has been initialized.")
+        LOGGER.info("${Constants.MOD_NAME}(${Constants.MOD_ID}) loaded")
     }
 }
